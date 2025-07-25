@@ -1,0 +1,4 @@
+[submodule "advanced_example"]
+	path = advanced_example
+	url = https://github.com/fairagro/m4.4_sciwin_client_demo
+	branch = complete_run
