@@ -2,3 +2,7 @@
 	path = advanced_example
 	url = https://github.com/fairagro/m4.4_sciwin_client_demo
 	branch = complete_run
+[submodule "getting_started"]
+	path = getting_started
+	url = https://github.com/fairagro/m4.4_sciwin_client_demo_basic
+	branch = complete_run
