@@ -2,7 +2,7 @@
 This repo provides all [SciWIn Client](https://github.com/fairagro/m4.4_sciwin_client) Examples from the [Documentation](https://fairagro.github.io/m4.4_sciwin_client/).
 
 ## [Getting started example](https://github.com/fairagro/m4.4_sciwin_client_demo_basic/tree/complete_run)
-The getting started example is the most basic example provided with SciWIn Client. It creates a simple two-step-workflow without using containerization. It is made to get familiar with the basic capabilities of the `tool create` and `workflow` commands.
+The getting started example is the most basic example provided with SciWIn Client. It creates a simple two-step-workflow without using containerization. It is made to get familiar with the basic capabilities of the `create` and `connect` commands.
 <details><summary>Preview Workflow</summary>
 <img src="https://raw.githubusercontent.com/fairagro/m4.4_sciwin_client_demo_basic/complete_run/workflow.svg" alt="workflow"/>
 </details>
