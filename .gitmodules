@@ -9,3 +9,4 @@
 [submodule "corn_prediction"]
 	path = corn_prediction
 	url = https://github.com/fairagro/m4.4_demo_corn_prediction
+	branch = run
