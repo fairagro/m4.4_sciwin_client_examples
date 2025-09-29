@@ -6,7 +6,3 @@
 	path = getting_started
 	url = https://github.com/fairagro/m4.4_sciwin_client_demo_basic
 	branch = complete_run
-[submodule "corn_prediction"]
-	path = corn_prediction
-	url = https://github.com/fairagro/m4.4_demo_corn_prediction_iowa
-	branch = run
