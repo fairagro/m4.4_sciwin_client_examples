@@ -16,7 +16,7 @@ The advanced example provides a real world use case using data from the german e
 ## [Corn Prediction](https://github.com/fairagro/m4.4_demo_corn_prediction/tree/run)
 This example demonstrates the usage of `s4n`  through a simplified crop yield prediction pipeline that combines soil and weather data to train models and generate county-level yield predictions for Iowa.
 <details><summary>Preview Workflow</summary>
-<img src="https://raw.githubusercontent.com/fairagro/m4.4_demo_corn_prediction_iowa/run/workflow.svg" alt="workflow"/>
+<img src="https://raw.githubusercontent.com/fairagro/m4.4_demo_corn_prediction/main/workflow.svg" alt="workflow"/>
 </details>
 
 
