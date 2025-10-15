@@ -22,6 +22,7 @@ This example demonstrates the usage of `s4n`  through a simplified crop yield pr
 ## [Automated Metrics](https://github.com/fairagro/m4.4_metrics)
 An Example Repo where the SciWin-Client Team does collect metrics about the SciWIn-Client by using a Workflow created by SciWin-Client. This Workflow is executed on a regular basis using GitHub Actions.
 <details><summary>Preview Workflow</summary>
+
 ```mermaid
 ---
 config:
@@ -76,6 +77,7 @@ flowchart TB
   style analyze stroke:#385723,stroke-width:2px;
   style announce stroke:#385723,stroke-width:2px;
 ```
+
 </details>
 
 ## Coming soon
