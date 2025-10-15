@@ -10,3 +10,6 @@
 	path = corn_prediction
 	url = https://github.com/fairagro/m4.4_demo_corn_prediction
 	branch = run
+[submodule "automated_metrics"]
+	path = automated_metrics
+	url = https://github.com/fairagro/m4.4_metrics
