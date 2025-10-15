@@ -19,6 +19,64 @@ This example demonstrates the usage of `s4n`  through a simplified crop yield pr
 <img src="https://raw.githubusercontent.com/fairagro/m4.4_demo_corn_prediction/main/workflow.svg" alt="workflow"/>
 </details>
 
+## [Automated Metrics](https://github.com/fairagro/m4.4_metrics)
+An Example Repo where the SciWin-Client Team does collect metrics about the SciWIn-Client by using a Workflow created by SciWin-Client. This Workflow is executed on a regular basis using GitHub Actions.
+<details><summary>Preview Workflow</summary>
+```mermaid
+---
+config:
+  theme: base
+  look: neo
+  themeVariables:
+    primaryColor: '#C5E0B4'
+    primaryTextColor: '#231f20'
+    secondaryColor: '#EEEEEE'
+    lineColor: '#385723'    
+    fontSize: 12px
+    tertiaryTextColor: '#231f20'
+    fontFamily: 'Fira Sans, trebuchet ms, verdana, arial'
+---
+flowchart TB
+  linkStyle default stroke:#385723,stroke-width: 2px;
+  subgraph inputs[Workflow Inputs]
+    direction TB
+    token(token)
+  end
+  subgraph outputs[Workflow Outputs]
+    direction TB
+    raw_data(raw_data)
+    analyzed_data(analyzed_data)
+    badge(badge)
+    platform(platform)
+    readme(readme)
+    release(release)
+  end
+    collect(collect)
+  token --> |token|collect
+    analyze(analyze)
+  collect --> |json|analyze
+    announce(announce)
+  analyze --> |json|announce
+  collect --> |raw_data|raw_data
+  analyze --> |analyzed_data|analyzed_data
+  analyze --> |badge|badge
+  analyze --> |platform|platform
+  announce --> |readme|readme
+  analyze --> |release|release
+  style inputs fill:#EEEEEE,stroke-width:2px;
+  style token stroke:#0f9884,fill:#6FC1B5,stroke-width:2px;
+  style outputs fill:#EEEEEE,stroke-width:2px;
+  style raw_data stroke:#823909,fill:#F8CBAD,stroke-width:2px;
+  style analyzed_data stroke:#823909,fill:#F8CBAD,stroke-width:2px;
+  style badge stroke:#823909,fill:#F8CBAD,stroke-width:2px;
+  style platform stroke:#823909,fill:#F8CBAD,stroke-width:2px;
+  style readme stroke:#823909,fill:#F8CBAD,stroke-width:2px;
+  style release stroke:#823909,fill:#F8CBAD,stroke-width:2px;
+  style collect stroke:#385723,stroke-width:2px;
+  style analyze stroke:#385723,stroke-width:2px;
+  style announce stroke:#385723,stroke-width:2px;
+```
+</details>
 
 ## Coming soon
 ...
