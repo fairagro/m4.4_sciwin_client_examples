@@ -42,6 +42,7 @@ flowchart TB
   subgraph inputs[Workflow Inputs]
     direction TB
     token(token)
+    git(git)
   end
   subgraph outputs[Workflow Outputs]
     direction TB
@@ -51,6 +52,7 @@ flowchart TB
     platform(platform)
     readme(readme)
     release(release)
+    history(history)
   end
     collect(collect)
   token --> |token|collect
@@ -58,14 +60,21 @@ flowchart TB
   collect --> |json|analyze
     announce(announce)
   analyze --> |json|announce
+    announce_templates_template_md(../../templates/template.md)
+  announce_templates_template_md --> |templates_template_md|announce
+    provenance(provenance)
+  git --> |git|provenance
+  analyze --> |analyzed_data_json|provenance
   collect --> |raw_data|raw_data
   analyze --> |analyzed_data|analyzed_data
   analyze --> |badge|badge
   analyze --> |platform|platform
   announce --> |readme|readme
   analyze --> |release|release
+  provenance --> |history|history
   style inputs fill:#EEEEEE,stroke-width:2px;
   style token stroke:#0f9884,fill:#6FC1B5,stroke-width:2px;
+  style git stroke:#0f9884,fill:#6FC1B5,stroke-width:2px;
   style outputs fill:#EEEEEE,stroke-width:2px;
   style raw_data stroke:#823909,fill:#F8CBAD,stroke-width:2px;
   style analyzed_data stroke:#823909,fill:#F8CBAD,stroke-width:2px;
@@ -73,9 +82,12 @@ flowchart TB
   style platform stroke:#823909,fill:#F8CBAD,stroke-width:2px;
   style readme stroke:#823909,fill:#F8CBAD,stroke-width:2px;
   style release stroke:#823909,fill:#F8CBAD,stroke-width:2px;
+  style history stroke:#823909,fill:#F8CBAD,stroke-width:2px;
   style collect stroke:#385723,stroke-width:2px;
   style analyze stroke:#385723,stroke-width:2px;
   style announce stroke:#385723,stroke-width:2px;
+  style announce_templates_template_md font-size:9px,fill:#cfeae6, stroke:#9FD6CE,stroke-width:2px;
+  style provenance stroke:#385723,stroke-width:2px;
 ```
 
 </details>
